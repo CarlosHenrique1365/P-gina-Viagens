@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VivaMundo Viagens</title>
+    <link rel="stylesheet" href="estilos/estyle.css">
+    <link rel="stylesheet" href="estilos/accordion.css">
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css">
+</head>
+
+<body>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
+
+    <script type="module" defer src="JavaScript/index.js"></script>
+
+    <!-- Navegação -->
+<nav class="navbar fixed-top navbar-expand-lg bg-body-secondary">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="#">
+            <p class="display-5">VIVAMUNDO</p>
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse bg-body-secondary p-3 m-0" id="navbarNavDropdown">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="pacotes.html">PACOTES</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">PROMOÇÕES</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">BLOG</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">CONTATO</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">DESTINOS</a>
+                    <ul class="dropdown-menu p-3 text-center">
+                        <li><a class="dropdown-item" href="#">JAPÃO</a></li>
+                        <li><a class="dropdown-item" href="#">EMIRADOS ÁRABES</a></li>
+                        <li><a class="dropdown-item" href="#">RÚSSIA</a></li>
+                        <li><a class="dropdown-item" href="#">RIO DE JANEIRO</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<main>
+    <div class="container-fluid p-1">
+        <div class="row">
+            <!-- Slider de imagens -->
+            <div class="col-lg-7 p-0 m-0 img-slider">
+                <div id="carouselCidades" class="carousel slide">
+                    <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#carouselCidades" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                        <button type="button" data-bs-target="#carouselCidades" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                        <button type="button" data-bs-target="#carouselCidades" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                        <button type="button" data-bs-target="#carouselCidades" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                    </div>
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="imagens/japao.jpg" class="d-block w-100" alt="Japão">
+                            <div class="carousel-caption display-5">Japão</div>
+                        </div>
+                        <div class="carousel-item">
+                            <img src="imagens/emirados-arabes.png" class="d-block w-100" alt="Emirados Árabes">
+                            <div class="carousel-caption display-5">Emirados Árabes</div>
+                        </div>
+                        <div class="carousel-item">
+                            <img src="imagens/rio de janeiro.jpg" class="d-block w-100" alt="Rio de Janeiro">
+                            <div class="carousel-caption display-5">Rio de Janeiro</div>
+                        </div>
+                        <div class="carousel-item">
+                            <img src="imagens/russia.jpg" class="d-block w-100" alt="Rússia">
+                            <div class="carousel-caption display-5">Rússia</div>
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselCidades" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselCidades" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+            </div>
+
+            <!-- Formulário -->
+            <div class="col-lg-5 bg-destaque formulario p-3">
+                <h2 class="display-4 text-center text-white">Planeje sua viagem dos sonhos agora!</h2>
+                <h3 class="text-white text-center p-2">Descubra destinos incríveis e ofertas exclusivas – inscreva-se para receber as melhores dicas!</h3>
+                <form action="">
+                    <div class="input-group p-5">
+                        <input type="text" class="form-control" placeholder="E-mail" aria-label="email" aria-describedby="basic-addon2">
+                        <span class="input-group-btn" id="email">
+                            <button class="btn btn-primary" type="button">Inscreva-se</button>
+                        </span>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+<section>
+    <div class="container my-5 p-5">
+        <div class="row">
+            <div class="col-12 text-center p-3">
+                <h2 class="display-5 fw-bold">Embarque na sua próxima grande aventura!</h2>
+            </div>
+        
+            <div class="row">
+            <div class="col-lg-6 col-md-12 text-center p-5">
+                <img src="imagens/star.svg" alt="">
+                <h4 class="fw-semibold m-2">Experiências Inesquecíveis</h4>
+                <p class="text-muted">Viaje com roteiros personalizados e viva momentos únicos em cada destino.</p>
+            </div>
+
+            <div class="col-lg-6 col-md-12 text-center p-5">
+                <img src="imagens/cash.svg" alt="">
+                <h4 class="fw-semibold m-2">Melhor Custo-Benefício</h4>
+                <p class="text-muted">Aproveite pacotes exclusivos com preços acessíveis e sem taxas escondidas.</p>
+            </div>
+                                            
+            <div class="col-lg-6 col-md-12 text-center p-5">
+                <img src="imagens/shield-fill.svg" alt="">                    
+                <h4 class="fw-semibold m-2">Segurança e Confiabilidade</h4>
+                <p class="text-muted">Planejamento completo com suporte 24h e parcerias com as melhores redes de hospedagem e transporte.</p>
+            </div>
+                    
+            <div class="col-lg-6 col-md-12 text-center p-5">
+                <img src="imagens/plane-line.svg" alt="">
+                <h4 class="fw-semibold m-2">Facilidade e Conforto</h4>
+                <p class="text-muted">Organizamos tudo para você – desde passagens até passeios, garantindo uma viagem sem preocupações.</p>
+            </div>                                        
+        </div>
+    </div>
+</section>
+
+<section class="container-fluid p-5" id="faq">
+    <div class="row">
+        <div class="col-12 text-center">
+            <h2 class="display-5 fw-bold text-primary">FAQ</h2>
+        </div>
+    </div>
+        <div class="row faq">
+            <div class="col-12 text-center justify-content-center js-accordion-container">
+                <dl class="js-accordion text-light">
+                    <dt>Como faço para reservar uma viagem?</dt>
+                    <dd>Você pode reservar diretamente pelo nosso site, escolhendo o destino, datas e opções de hospedagem. Após selecionar, siga para o pagamento e confirme sua reserva.
+                    </dd>
+                    <dt>Posso cancelar ou modificar minha reserva?</dt>
+                    <dd>Sim! As regras de cancelamento e alteração dependem da política da companhia aérea, hotel ou agência. Verifique os detalhes na página da sua reserva ou entre em contato conosco.</dd>
+                    <dt>Quantas malas posso levar no voo?</dt>
+                    <dd>As regras de bagagem variam de acordo com a companhia aérea e o tipo de passagem adquirida. Recomendamos verificar no site da companhia ou na sua reserva.</dd>
+                    <dt>O que fazer se minha bagagem for extraviada?</dt>
+                    <dd>Entre em contato imediatamente com o balcão da companhia aérea no aeroporto e registre a ocorrência. Se precisar de ajuda, nossa equipe de suporte também pode auxiliar.</dd>
+                </dl>
+            </div>
+        </div>       
+    </div>
+</section>
+
+<section class="depoiments text-center p-5">
+    <div class="container">
+        <div class="row">
+            <h2 class="display-5 fw-bold">Feedback dos nossos clientes</h2>
+            <div class="depoiments-content  col-md-12 my-5 p-5 gap-3">
+                <p>"Simplesmente incrível! Encontrei tudo o que precisava para planejar minhas férias em um só lugar. Desde as passagens até as dicas de roteiro, o site foi essencial. Atendimento rápido e super atencioso. Já virei cliente fiel!"</p>
+                <h4>-Mariana Tavares – São Paulo/SP</h4>
+            </div>
+
+            <div class="depoiments-content col-md-12 my-5 p-5">
+                <p>"Fiz minha primeira viagem internacional com ajuda do site e foi tudo perfeito. Me senti seguro durante todo o processo, e o suporte foi impecável. Sempre tiravam minhas dúvidas com paciência e clareza. Super recomendo!"</p>
+                <h4>-João Henrique – Belo Horizonte/MG</h4>
+            </div>
+
+            <div class="depoiments-content col-md-12 my-5 p-5">
+                <p>"O que mais me impressionou foi a personalização do atendimento. Eles realmente ouviram o que eu queria e montaram um roteiro sob medida. Me senti cuidada do início ao fim. Nota mil!"</p>
+                <h4>- Carla Mendes – Curitiba/PR</h4>
+            </div>
+
+            <div class="depoiments-content col-12 my-5 p-5">
+                <p>"Fechei minha lua de mel com eles e foi a melhor decisão! Tudo saiu perfeito, desde os hotéis até os passeios. O suporte durante a viagem me deu uma tranquilidade enorme. Serviço impecável!"</p>
+                <h4>-Vanessa Rocha – Recife/PE</h4>
+            </div>
+
+            
+        </div>
+    </div>
+</section>
+</main>
+<footer>
+    <div class="container">
+        <div class="row text-center p-5">
+            <div class="col-lg-3 col-md-6">
+                <ul class="footer-itens p-2">
+                    <h3>Mapa do Site</h3>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="pacotes.html">PACOTES</a></li>
+                    <li><a href="promocoes.html">PROMOÇÕES</a></li>
+                    <li><a href="contato.html">CONTATO</a></li>
+                    <li><a href="sobrenos.html">SOBRE NOS</a></li>
+                    <li><a href="blog.html">BLOG</a></li>
+                </ul>
+            </div>
+
+            <div class="col-lg-4 col-md-6">               
+                <ul class="footer-itens p-2">
+                    <h3>Institucional</h3>
+                    <li><a href="#">POLITICA DE PRIVACIDADE</a></li>
+                    <li><a href="#">TRABALHE conosco</a></li>
+                    <li><a href="#">GUIA VM VIAGENS</a></li>
+                    <li><a href="# ">CENTRAL DE VENDAS</a></li>
+                </ul>
+            </div>
+
+            <div class="col-lg-3 col-md-12">               
+                <ul class="footer-itens p-2">
+                    <h3>Ajuda</h3>
+                    <li><a href="#">TROCAS E DEVOLUÇOES</a></li>
+                    <li><a href="#">MEUS PEDIDOS</a></li>
+                    <li><a href="#">PAGAMENTOS</a></li>
+                    <li><a href="#">CANCELAMENTOS</a></li>
+                    <li><a href="#">ACESSIBILIDADE</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</footer>
+</body>
+
+</html>

@@ -1,0 +1,12 @@
+@charset "UTF-8";
+#content{
+    background-image: url('../imagens/img-vivamundo.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center top;
+    height: 100vh;
+}
+
+#pacotes{
+
+}
