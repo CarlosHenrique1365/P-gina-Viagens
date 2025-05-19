@@ -39,8 +39,9 @@ p{
 }
 
 .fundo-destaque{
-    height: 85vh;
-    background-image: url('../imagens/img-vivamundo.png');
+    min-height: 350px;
+    max-height: 350px;
+    background-image: url('../imagens/imagem-fundo-pacotes.png');
     background-size: cover;
     background-position: center;
 }
