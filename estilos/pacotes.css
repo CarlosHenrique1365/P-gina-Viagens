@@ -33,6 +33,10 @@ p{
     font-family: var(--font-principal) !important;
     font-weight: 100 !important;
 }
+#text-info{
+    font-weight: 700 !important;
+    font-size: 1.3rem;
+}
 
 #content{
 
